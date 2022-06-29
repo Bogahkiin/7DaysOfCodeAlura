@@ -1,8 +1,6 @@
 # 7DaysOfCodeAlura
 
-Desafio de lógica de programação proposto pela Alura para fixar os conhecimentos aprendidos nos cursos.
+Desafio de lógica de programação com javascript proposto pela Alura para fixar os conhecimentos aprendidos nos cursos.
 
 # Dia 1
-
-
-# Dia 2
+Verificar a lógica de comparadores de um curto pedaço de código.
