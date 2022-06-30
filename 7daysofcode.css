@@ -1,0 +1,41 @@
+head {
+    background-color: #1E90FF;
+}
+body {
+    height: 546px;
+	font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    border-top: 100px solid #1E90FF;
+    border-bottom: 100px solid #1E90FF;
+    margin: auto;
+}
+footer {
+    background-color: #1E90FF;
+}
+form input {
+    margin: 10px auto 15px auto;
+    padding: 2px 2px 2px 2px;
+    border-radius: 3px;
+    display: block;
+}
+fieldset {
+    border: none;
+    margin-left: -12px;
+}
+.sumir {
+    display: none;
+}
+button {
+    border-radius: 18px;
+    border: none;
+    padding: 5px 25px;
+    margin: 10px 0px;
+    background-color: #1E90FF;
+    color: white;
+}
+button:hover {
+    background-color: blue;
+}
+button:active {
+    background-color: darkblue;
+}
