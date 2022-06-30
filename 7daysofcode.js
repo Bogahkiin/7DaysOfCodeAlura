@@ -56,3 +56,4 @@ const segundaResposta = document.getElementById("segunda-resposta");
  botaoNao.onclick = function () {
     segundaResposta.innerHTML = `Ahh que pena... Já tentou aprender outras linguagens?`
  }
+
