@@ -36,9 +36,10 @@ const mensagem = document.getElementById("resposta");
 //Formulário e mensagem de resposta
 botaoEnviar.onclick = function () {
     let dadosInseridos = [nome.value, idade.value, linguagem.value];
+    const primeirasPerguntas = document.getElementById("primeiras-perguntas");
     mensagem.innerHTML = `Olá ${dadosInseridos[0]}, você tem ${dadosInseridos[1]} anos e já está aprendendo ${dadosInseridos[2]}!`;
+    primeirasPerguntas.classList.add('sumir');
 
-    
     const pergunta = document.getElementById("texto-pergunta");
     const fieldset = document.getElementById("perguntar-se-gosta");
     pergunta.innerHTML = `E está gostando de estudar ${dadosInseridos[2]}?`;
