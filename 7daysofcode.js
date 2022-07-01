@@ -57,3 +57,6 @@ const segundaResposta = document.getElementById("segunda-resposta");
     segundaResposta.innerHTML = `Ahh que pena... Já tentou aprender outras linguagens?`
  }
 
+//Segundo dia
+
+
