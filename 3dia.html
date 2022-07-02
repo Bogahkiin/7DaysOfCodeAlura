@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="7daysofcode.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>7 Days Of Code Alura - Bogahkiin</title>
+</head>
+<body>
+    <header>
+        <h1>7 Days Of Code Alura Third Day</h1>
+    </header>
+    <main>
+        <form onsubmit='return false' id="perguntas-dia-3">
+            <div>
+                <legend id="pergunta-back-ou-front">Você deseja seguir para a área de front-end ou para a área de back-end?</legend>
+                <button type="button" class="botoes" onclick="opcaoEscolhida(`0`)" id="botao-0">Front-End</button>
+                <button type="button" class="botoes" onclick="opcaoEscolhida(`1`)" id="botao-1">Back-End</button>
+            </div>
+            <div id="perguntas-dia-3-front" class="sumir">
+                <legend id="pergunta-front">Maneiro! E você pretende aprender React ou aprender Vue?</legend>
+                <button type="button" class="botoes" onclick="opcaoEscolhida(`2`)" id="botao-2">React</button>
+                <button type="button" class="botoes" onclick="opcaoEscolhida(`2`)" id="botao-3">Vue</button>
+            </div>
+            <div id="perguntas-dia-3-back" class="sumir">
+                <legend id="pergunta-back">Isso aí! E você pretende aprender C# ou Java?</legend>
+                <button type="button" class="botoes" onclick="opcaoEscolhida(`3`)" id="botao-4">C#</button>
+                <button type="button" class="botoes" onclick="opcaoEscolhida(`3`)" id="botao-5">Java</button>
+            </div>
+            <div id="perguntas-dia-3-full" class="sumir">
+                <legend id="pergunta-fullstack-ounao">Legal! Pretende se especializar ou se desenvolver para se tornar fullstack?</legend>
+                <button type="button" class="botoes" onclick="opcaoEscolhida(`4`)" id="botao-6">Fullstack</button>
+                <button type="button" class="botoes" onclick="opcaoEscolhida(`4`)" id="botao-7">Especializar</button>
+            </div>
+            <div id="perguntas-dia-3-final" class="sumir">
+                <label for="ultima-pergunta-dia-3">Agora diga aqui quais tecnologias quer se especializar ou conhecer</label>
+                <input type="text" id="ultima-pergunta-dia-3" class="input-padrao" autocomplete='off' required placeholder="Digite aqui e aperte o botão do lado">
+                <button type="button" class="botoes botao+" onclick="adicionarPalavraAoParagrafo()" id="botao+">+</button>
+            </div>
+        </form>
+
+        <p id="lista-final"></p>
+
+    </main>
+    <footer>
+
+    </footer> 
+    <script src="7daysofcode.js"></script>
+</body>
+</html>

@@ -9,9 +9,14 @@ body {
     border-bottom: 100px solid #1E90FF;
     margin: auto;
 }
-footer {
-    background-color: #1E90FF;
+main {
+    height: 300px;
 }
+footer {
+    margin-top: 100px;
+}
+
+/* Página dia 2 */
 form input {
     margin: 10px auto 15px auto;
     padding: 2px 2px 2px 2px;
@@ -25,17 +30,50 @@ fieldset {
 .sumir {
     display: none;
 }
-button {
+.botoes {
     border-radius: 18px;
     border: none;
     padding: 5px 25px;
-    margin: 10px 0px;
+    margin: 10px 5px;
     background-color: #1E90FF;
     color: white;
 }
-button:hover {
+.botoes:hover {
     background-color: blue;
+    padding: 7px 27px;
+    margin: 8px 3px;
 }
-button:active {
+.botoes:active {
     background-color: darkblue;
+    border: 2px solid darkslategray;
+    padding: 6px 26px;
+    margin: 7px 2px;
+}
+
+/* Botões-link para outros dias do desafio */
+.botoes-para-outros-dias {
+    color: #1E90FF;
+    border-radius: 18px;
+    padding: 5px 25px;
+    margin: 10px 10px;
+    display: inline-block;
+    background-color: rgb(244, 244, 244);
+    border: 1px solid #1E90FF;
+}
+.botoes-para-outros-dias:hover{
+    background-color: #1E90FF;
+    color: white;
+    padding: 7px 27px;
+    margin: 8px 8px;
+}
+
+/* Página do terceiro dia */
+form label {
+    display: block;
+}
+#botao+{
+    display: inline-block;
+}
+#ultima-pergunta-dia-3 {
+    display: inline-block;
 }

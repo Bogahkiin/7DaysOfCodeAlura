@@ -8,38 +8,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <title>7DaysOfCodeAlura</title>
+    <title>7 Days Of Code Alura - Bogahkiin</title>
 </head>
 <body>
     <header>
-        <h1>7 Days Of Code Alura</h1>
+        <h1>7 Days Of Code Alura Second Day</h1>
     </header>
     <main>
         <form id="primeiras-perguntas" action="">
             <label for="nome">Qual seu nome?</label>
-            <input type="text" id="nome" class="input-padrao" placeholder="Alberto Noberto Umberto">
+            <input type="text" id="nome" class="input-padrao" required placeholder="Alberto Noberto Umberto" autocomplete='off'>
 
             <label for="idade">Quantos anos você tem?</label>
-            <input type="number" id="idade" class="input-padrao" placeholder="99">
+            <input type="number" id="idade" class="input-padrao" required placeholder="99" autocomplete='off'>
 
             <label for="linguagem">Qual linguagem de programação você está estudando?</label>
-            <input type="text" id="linguagem" class="input-padrao" placeholder="C#, javascript, PHP, etc.">
+            <input type="text" id="linguagem" class="input-padrao" required placeholder="C#, javascript, PHP, etc." autocomplete='off'>
 
-            <button type="button" id="input-enviar">Enviar formulário</button>
+            <button type="button" class="botoes" id="input-enviar">Enviar formulário</button>
         </form>
 
         <p id="resposta"></p>
 
         <form id="perguntar-se-gosta" class="sumir">
             <legend id="texto-pergunta"></legend>
-            <button type="button" id="botao-sim">Sim</button>
-            <button type="button" id="botao-nao">Não</button>
+            <button type="button" class="botoes" id="botao-sim">Sim</button>
+            <button type="button" class="botoes" id="botao-nao">Não</button>
         </form>
 
         <p id="segunda-resposta"></p>
 
     </main>
     <footer>
+        <a href="3dia.html">
+            <button type="button" class="botoes-para-outros-dias">Desafio terceiro dia</button>
+        </a>
     </footer>
     <script src="7daysofcode.js"></script>
 </body>
