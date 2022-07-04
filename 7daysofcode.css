@@ -13,7 +13,7 @@ main {
     height: 300px;
 }
 footer {
-    margin-top: 100px;
+    margin: 100px auto 0px auto;
 }
 
 /* Página dia 2 */

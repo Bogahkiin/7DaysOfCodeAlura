@@ -20,3 +20,6 @@ Para atingir o proposto (e de uma forma diferente da solução do dia anterior p
 <p align="center">
 <img width="420px" height ="465.5px" src="https://user-images.githubusercontent.com/63385341/176984767-9e92decf-5cd7-49ac-9307-a81dce40e8b7.gif">
 </p>
+
+## Dia 4
+<p align="justify">O desafio do quarto dia consiste em criar um jogo de adivinhação contra a máquina. O usuário tem duas chances de adivinhar um número aleatório. Como há poucos textos nesse desafio, não foi necessário um html dedicado, sendo assim, em qualquer uma das páginas do desafio há um botão para iniciar o desafio. Surge um prompt com um texto indicando para inserir um número de 1 a 10. O valor digitado e enviado no prompt é comparado com uma variável que coleta o número gerado aleatóriamente por uma função e caso seja igual surge um alert com parabenizações. Em caso de erro, se inicia uma nova função com um novo prompt para a última tentativa, o código dessa segunda parte é bastante semelhante com o da primeira. Nos acertos e no último erro aparece o valor correto dentro da mensagem.</p>
