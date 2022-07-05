@@ -44,3 +44,15 @@ function adicionarPalavraAoParagrafo() {
 
     paragrafoLista.innerText += ` ${palavrasInseridas};`;
 }
+
+
+/* Verificar o campo de texto e no Enter enviar
+function colocaItemNaLista () {
+    input.addEventListener("keyup", (event) => {
+        if (event.key === "Enter") {
+            console.log("apertou enter "+ itemDigitado.value)
+            listaFinal.innerText += ` ${itemDigitado.value},`;
+            itemDigitado.value = ""; 
+        }
+ });
+}*/
