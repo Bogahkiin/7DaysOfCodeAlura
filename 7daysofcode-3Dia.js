@@ -36,23 +36,18 @@ function tirarSumirDaPergunta(idPergunta) {
 }
 
 //Última pergunta em que pode ser preenchida por palavras ao infinito
-function adicionarPalavraAoParagrafo() {
 
-    const campoTexto = document.getElementById('ultima-pergunta-dia-3');
-    const paragrafoLista = document.getElementById('lista-final');
-    let palavrasInseridas = campoTexto.value;
+function adicionarTecnologia () {
+    
+    const campoTexto = document.getElementById("ultima-pergunta-dia-3");
+    let paragrafoLista = document.getElementById("lista-final");
 
-    paragrafoLista.innerText += ` ${palavrasInseridas};`;
+    campoTexto.addEventListener("keyup", (event) => {
+        if (event.key === "Enter") {
+            paragrafoLista.innerText += ` ${campoTexto.value};`;
+            campoTexto.value = ""
+        }
+    })
 }
 
-
-/* Verificar o campo de texto e no Enter enviar
-function colocaItemNaLista () {
-    input.addEventListener("keyup", (event) => {
-        if (event.key === "Enter") {
-            console.log("apertou enter "+ itemDigitado.value)
-            listaFinal.innerText += ` ${itemDigitado.value},`;
-            itemDigitado.value = ""; 
-        }
- });
-}*/
+adicionarTecnologia ();

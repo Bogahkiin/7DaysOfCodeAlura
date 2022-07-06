@@ -14,6 +14,7 @@ main {
 }
 footer {
     margin: 100px auto 0px auto;
+    padding-top: 20px;
 }
 
 /* Página dia 2 */
@@ -32,26 +33,26 @@ fieldset {
     transition: 500ms;
 }
 .botoes {
-    text-align: center;
     border-radius: 18px;
     border: none;
     padding: 5px 25px;
     margin: 10px 5px;
     background-color: #1E90FF;
     color: white;
+    height: 30px;
+    width: 150px;
 }
 .botoes:hover {
     background-color: blue;
     padding: 7px 27px;
-    margin: 8px 3px;
-    transition: 175ms;
+    margin: 8px 5px;
+    transition: 175ms;=
 }
 .botoes:active {
     background-color: darkblue;
     border: 2px solid darkslategray;
-    padding: 6px 26px;
-    margin: 7px 2px;
-    transition: 175ms;
+    padding: 5px 25px;
+    transition: 175ms;=
 }
 
 /* Botões-link para outros dias do desafio */
@@ -74,11 +75,8 @@ fieldset {
 }
 
 /* Página do terceiro dia */
-form label {
+.form label {
     display: block;
-}
-#botao+{
-    display: inline-block;
 }
 #ultima-pergunta-dia-3 {
     display: inline-block;
@@ -124,4 +122,9 @@ input[type="checkbox"] {
 }
 .lista-compras-finalizada p:last-child {
     font-size: small;
+}
+/* Sexto dia */
+#remover p, #remover button {
+    font-size: small;
+    margin: 3px 10px;
 }

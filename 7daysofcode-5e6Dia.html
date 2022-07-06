@@ -12,22 +12,20 @@
 </head>
 <body>
     <header>
-        <h1>7 Days Of Code Alura Fifth Day</h1>
+        <h1>7 Days Of Code Alura Fifth Day (plus Sixth)</h1>
     </header>
     <main>
-        <div id="primeira-pergunta" class="teste-transicao">
+        <div id="primeira-pergunta">
             <p>Olá, gostaria de adicionar algum alimento em sua lista de compras?</p>
             <button type="button" class="botoes" onclick="botaoSim()">Sim</button>
             <button type="button" class="botoes" onclick="botaoNao()">Não</button>
         </div>
-
-        
-        
-        <div id="segunda-pergunta" class="sumir teste-transicao">
+        <h2 id="naoqueropornada" class="sumir">Então o que tá fazendo aqui? Recarrega e aperta sim!</h2>        
+        <div id="segunda-pergunta" class="sumir">
             <label for="qualcomida">Qual comida você deseja inserir na lista?</label>
             <input type="text" name="qualcomida" id="qualcomida" class="input-padrao" placeholder='Digite aqui e aperte Enter' autocomplete='off'>
             
-            <div id="checkboxes" class="sumir teste-transicao">
+            <div id="checkboxes" class="sumir">
                 <p id="colocaoquedigitou"></p>
 
                 <label class="checkbox"><input type="checkbox" id="checkbox-0" onclick="selecionaCategoria(0)">Fruta e legumes</label>
@@ -39,16 +37,21 @@
                 <label class="checkbox"><input type="checkbox" id="checkbox-6" onclick="selecionaCategoria(6)">Outros</label>
             </div>
         </div>
-        
-        <div id="fechar-lista" class="sumir teste-transicao">
+        <div id="fechar-lista" class="sumir">
             <button type="button" class="botoes" name="botaoTerminar" onclick="fecharLista()">Fechar lista</button>
+            <button type="button" class="botoes" name="botaoRemover" onclick="botaoRemover()">Remover item</button>
         </div>
-        
-        <div id="lista-compras" class="sumir teste-transicao lista-compras-finalizada">
+        <div id="lista-compras" class="sumir lista-compras-finalizada">
             <p>A sua lista de compras:</p>
             <p id="lista-final"></p>
         </div>
-        <h2 id="naoqueropornada" class="sumir teste-transicao">Então o que tá fazendo aqui? Recarrega e aperta sim!</h2>
+        <div id="remover" class="sumir">
+            <p>Para remover um item:</p>
+            <input type="text" name="qualremover" id="qualremover" class="input-padrao" placeholder="Digite aqui e aperte Enter" autocomplete="off">
+            <p id="remover3"></p>
+            <button type="button" class="botoes" onclick="botaoSim()">Voltar</button>
+        </div>
+
     </main>
     <footer>
         <button type="button" class="botoes-para-outros-dias" onclick="primeiroDia()">Desafio primeiro dia</button>
@@ -56,7 +59,7 @@
         <a href="7daysofcode-3Dia.html"><button type="button" class="botoes-para-outros-dias">Desafio terceiro dia</button></a>
         <button type="button" class="botoes-para-outros-dias"  onclick="quartoDia()">Desafio quarto dia</button>
     </footer>
-    <script src="7daysofcode-5Dia.js"></script>
+    <script src="7daysofcode-5e6Dia.js"></script>
     <script src="7daysofcode.js"></script>
 </body>
 </html>

@@ -1,6 +1,8 @@
 //Primeiro dia
 
 function primeiroDia () {
+    alert("abrir console");
+    
     let numeroUm = 1;
     let stringUm = '1';
     let numeroTrinta = 30;

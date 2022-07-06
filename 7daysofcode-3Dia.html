@@ -15,33 +15,30 @@
         <h1>7 Days Of Code Alura Third Day</h1>
     </header>
     <main>
-        <form onsubmit='return false' id="perguntas-dia-3">
-            <div>
-                <legend id="pergunta-back-ou-front">Você deseja seguir para a área de front-end ou para a área de back-end?</legend>
-                <button type="button" class="botoes" onclick="opcaoEscolhida(`0`)" id="botao-0">Front-End</button>
-                <button type="button" class="botoes" onclick="opcaoEscolhida(`1`)" id="botao-1">Back-End</button>
-            </div>
-            <div id="perguntas-dia-3-front" class="sumir">
-                <legend id="pergunta-front">Maneiro! E você pretende aprender React ou aprender Vue?</legend>
-                <button type="button" class="botoes" onclick="opcaoEscolhida(`2`)" id="botao-2">React</button>
-                <button type="button" class="botoes" onclick="opcaoEscolhida(`2`)" id="botao-3">Vue</button>
-            </div>
-            <div id="perguntas-dia-3-back" class="sumir">
-                <legend id="pergunta-back">Isso aí! E você pretende aprender C# ou Java?</legend>
-                <button type="button" class="botoes" onclick="opcaoEscolhida(`3`)" id="botao-4">C#</button>
-                <button type="button" class="botoes" onclick="opcaoEscolhida(`3`)" id="botao-5">Java</button>
-            </div>
-            <div id="perguntas-dia-3-full" class="sumir">
-                <legend id="pergunta-fullstack-ounao">Legal! Pretende se especializar ou se desenvolver para se tornar fullstack?</legend>
-                <button type="button" class="botoes" onclick="opcaoEscolhida(`4`)" id="botao-6">Fullstack</button>
-                <button type="button" class="botoes" onclick="opcaoEscolhida(`4`)" id="botao-7">Especializar</button>
-            </div>
-            <div id="perguntas-dia-3-final" class="sumir">
-                <label for="ultima-pergunta-dia-3">Agora diga aqui quais tecnologias quer se especializar ou conhecer</label>
-                <input type="text" id="ultima-pergunta-dia-3" class="input-padrao" autocomplete='off' required placeholder="Digite aqui e aperte o botão do lado">
-                <button type="button" class="botoes botao+" onclick="adicionarPalavraAoParagrafo()" id="botao+">+</button>
-            </div>
-        </form>
+        <div class="form">
+            <legend id="pergunta-back-ou-front">Você deseja seguir para a área de front-end ou para a área de back-end?</legend>
+            <button type="button" class="botoes" onclick="opcaoEscolhida(`0`)" id="botao-0">Front-End</button>
+            <button type="button" class="botoes" onclick="opcaoEscolhida(`1`)" id="botao-1">Back-End</button>
+        </div>
+        <div id="perguntas-dia-3-front" class="form sumir">
+            <legend id="pergunta-front">Maneiro! E você pretende aprender React ou aprender Vue?</legend>
+            <button type="button" class="botoes" onclick="opcaoEscolhida(`2`)" id="botao-2">React</button>
+            <button type="button" class="botoes" onclick="opcaoEscolhida(`2`)" id="botao-3">Vue</button>
+        </div>
+        <div id="perguntas-dia-3-back" class=" form sumir">
+            <legend id="pergunta-back">Isso aí! E você pretende aprender C# ou Java?</legend>
+            <button type="button" class="botoes" onclick="opcaoEscolhida(`3`)" id="botao-4">C#</button>
+            <button type="button" class="botoes" onclick="opcaoEscolhida(`3`)" id="botao-5">Java</button>
+        </div>
+        <div id="perguntas-dia-3-full" class=" form sumir">
+            <legend id="pergunta-fullstack-ounao">Legal! Pretende se especializar ou se desenvolver para se tornar fullstack?</legend>
+            <button type="button" class="botoes" onclick="opcaoEscolhida(`4`)" id="botao-6">Fullstack</button>
+            <button type="button" class="botoes" onclick="opcaoEscolhida(`4`)" id="botao-7">Especializar</button>
+        </div>
+        <div id="perguntas-dia-3-final" class="form sumir">
+            <label for="ultima-pergunta-dia-3">Agora diga aqui quais tecnologias quer se especializar ou conhecer</label>
+            <input type="text" name="ultima-pergunta-dia-3" id="ultima-pergunta-dia-3" class="input-padrao" placeholder="Digite aqui e aperte Enter" autocomplete='off'>
+        </div>
 
         <p id="lista-final"></p>
 
@@ -50,7 +47,7 @@
         <button type="button" class="botoes-para-outros-dias" onclick="primeiroDia()">Desafio primeiro dia</button>
         <a href="7daysofcode-2Dia.html"><button type="button" class="botoes-para-outros-dias">Desafio segundo dia</button></a>
         <button type="button" class="botoes-para-outros-dias"  onclick="quartoDia()">Desafio quarto dia</button>
-        <a href="7daysofcode-5Dia.html"><button type="button" class="botoes-para-outros-dias" >Desafio quinto dia</button></a>
+        <a href="7daysofcode-5e6Dia.html"><button type="button" class="botoes-para-outros-dias" >Desafio quinto e sexto dia</button></a>
     </footer>
     <script src="7daysofcode-3Dia.js"></script>
     <script src="7daysofcode.js"></script>
