@@ -123,8 +123,55 @@ input[type="checkbox"] {
 .lista-compras-finalizada p:last-child {
     font-size: small;
 }
+
 /* Sexto dia */
 #remover p, #remover button {
     font-size: small;
     margin: 3px 10px;
+}
+
+/* Sétimo dia */
+main p {
+    margin-top: 20px;
+}
+.calculdora {
+    border: 3px solid #1E90FF;
+    width: 150px;
+    height: 200px;
+    margin: 50px auto 0pc auto;
+    background-color: rgb(244, 244, 244);
+    padding-bottom: 10px;
+}
+.calculdora p {
+    border: 2px solid black;
+    background-color: white;
+    margin: 10px auto;
+    width: 75%;
+}
+.botoes-calculadora {
+    margin: 5px 5px;
+    padding: 2px 2px;
+}
+.botaocalculadora {
+    text-align: center;
+    vertical-align: middle;
+    padding: 3px 3px;
+    border-radius: 3px;
+    border: 0.5px solid black;
+    background-color: white;
+    color: #1E90FF;
+    height: 23px;
+    width: 23px;
+    transition: 50ms;
+}
+.botaocalculadora:hover {
+    background-color: #1E90FF;
+    color: white;
+    transition: 50ms;
+}
+.botaocalculadora:active {
+    background-color: mediumslateblue;
+}
+.adicionar-texto-css::after {
+    content: teste;
 }

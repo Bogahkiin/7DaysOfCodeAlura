@@ -1,5 +1,5 @@
 // Quinto e sexto desafio
-// Sexto desafio
+// Quinto desafio
 
 // Pegando as divs
 const div1aPergunta = document.getElementById("primeira-pergunta");
