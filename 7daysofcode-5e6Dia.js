@@ -7,24 +7,24 @@ const div2aPergunta = document.getElementById("segunda-pergunta");
 const divFecharLista = document.getElementById("fechar-lista")
 const divListaCompras = document.getElementById("lista-compras");
 
-const listaDivs = [div1aPergunta, div2aPergunta, divFecharLista, divListaCompras]; // lista com as const das divs
+var listaDivs = [div1aPergunta, div2aPergunta, divFecharLista, divListaCompras]; // lista com as const das divs
 
 const paragrafoComALista = document.getElementById("lista-final"); // paragrafo do HTML onde vai a lista no final
 var itemDigitadoAdicionar = document.getElementById("qualcomida"); // pegando o campo de digitação
 const categorias = document.getElementById('checkboxes'); // pegando as checkbox
 
 // Criando Arrays e uma lista com todos, para por os alimentos inseridos no input
-let fruta = []; let carne = []; let leite = []; let doce = []; let cereais = []; let massa = []; let outro = []; 
-let listaDasArrays = [fruta, carne, leite, doce, cereais, massa, outro];
-
-
+var fruta = []; var carne = []; var leite = []; var doce = []; var cereais = []; var massa = []; var outro = []; 
+var listaDasArrays = [fruta, carne, leite, doce, cereais, massa, outro];
 
 // Primeira pergunta, apertando botão sim
 function botaoSim () {
-    div1aPergunta.classList.add('sumir'); 
-    div2aPergunta.classList.remove('sumir'); // faz aparecer a segunda pergunta (qual alimento quer por e o campo)
-    divRemoverItem.classList.add('sumir'); // parte do desafio do sexto dia
-    divListaCompras.classList.add('sumir'); // parte do desafio do sexto dia
+    for (i = 0; i < listaDivs.length; i++) {
+        if (i != 1) {
+            listaDivs[i].classList.add('sumir');
+            divRemoverItem.classList.add('sumir');
+        } else {listaDivs[1].classList.remove('sumir');}
+    }
     paragrafoRemoveuItem.innerText = "" // parte do desafio do sexto
     paragrafoComALista.innerHTML = ""
     colocaItemNaLista(); // função para adicionar itens na lista 
@@ -51,27 +51,20 @@ function selecionaCategoria (e) {
 
 // Mostrar a lista com os itens
 function fecharLista () {
-    divListaCompras.classList.remove('sumir'); 
+    for (i = 0; i < listaDivs.length; i++) {
+        if (i != 3) {
+            listaDivs[i].classList.add('sumir');
+        } else {listaDivs[3].classList.remove('sumir');}
+    }
     paragrafoComALista.innerHTML = `<b>Frutas e legumes</b><br> ${fruta}<br><b>Carnes</b><br> ${carne}<br><b>Laticínios</b><br> ${leite}<br><b>Guloseimas</b><br> ${doce}<br><b>Cereais</b><br> ${cereais}<br><b>Massas</b><br> ${massa}<br><b>Outros</b><br> ${outro}`;
-    div1aPergunta.classList.add('sumir'); 
-    div2aPergunta.classList.add('sumir');
-    divFecharLista.classList.add('sumir');
 }
 
 // Apertou o não no início (maluco)
 function botaoNao () {
     document.getElementById("naoqueropornada").classList.remove('sumir');
-    div1aPergunta.classList.add('sumir');
-    div2aPergunta.classList.add('sumir');
-    divFecharLista.classList.add('sumir');
-    divListaCompras.classList.add('sumir')
-
-    /* criado na tentativa de diminuir a repetição de código, porém, mesmo funcionando, dá erro no console por motivos desconhecidos
-    for (i = 0; listaDivs.length; i++) {
-        if (listaDivs[i].classList.contains('sumir') == false){
-            listaDivs[i].classList.add('sumir');
-        } else {break; console.log("parou?")}
-    } */
+    for (i = 0; i < listaDivs.length; i++){
+        listaDivs[i].classList.add('sumir');
+    }
 }
 
 // Sexto desafio
@@ -80,15 +73,19 @@ function botaoNao () {
 const divRemoverItem  = document.getElementById("remover");
 const paragrafoRemoveuItem  = document.getElementById("remover3");
 const itemDigitadoRemover = document.getElementById("qualremover");
-let palavraParaRemover;
-let indexDaPalavraParaRemover;
+var palavraParaRemover;
+var indexDaPalavraParaRemover;
 
 function botaoRemover () {
-    divRemoverItem.classList.remove('sumir');
-    divListaCompras.classList.remove('sumir');
-    div1aPergunta.classList.add('sumir');
-    div2aPergunta.classList.add('sumir');
-    divFecharLista.classList.add('sumir');
+    for (i = 0; i < listaDivs.length; i++) {
+        if (i != 3) {
+            listaDivs[i].classList.add('sumir');
+        } else {
+            divRemoverItem.classList.remove('sumir');
+            divListaCompras.classList.remove('sumir');
+        }
+    }
+
     paragrafoComALista.innerHTML = `<b>Frutas e legumes</b><br> ${fruta}<br><b>Carnes</b><br> ${carne}<br><b>Laticínios</b><br> ${leite}<br><b>Guloseimas</b><br> ${doce}<br><b>Cereais</b><br> ${cereais}<br><b>Massas</b><br> ${massa}<br><b>Outros</b><br> ${outro}`;
     removeItemDaLista(); // função para retirar itens da lista
 }
@@ -103,6 +100,7 @@ function removeItemDaLista () {
                     removerDaLista (indexDaPalavraParaRemover); 
                     itemDigitadoRemover.value = "";
                     paragrafoRemoveuItem.innerText = palavraParaRemover + " foi removido."
+                    paragrafoComALista.innerHTML = `<b>Frutas e legumes</b><br> ${fruta}<br><b>Carnes</b><br> ${carne}<br><b>Laticínios</b><br> ${leite}<br><b>Guloseimas</b><br> ${doce}<br><b>Cereais</b><br> ${cereais}<br><b>Massas</b><br> ${massa}<br><b>Outros</b><br> ${outro}`;
                 } else {
                     paragrafoRemoveuItem.innerText = "palavra não encontrada, tente novamente.";
                     itemDigitadoRemover.value = "";

@@ -1,7 +1,6 @@
 //Primeiro dia
 
 function primeiroDia () {
-    alert("abrir console");
     
     let numeroUm = 1;
     let stringUm = '1';
@@ -11,16 +10,16 @@ function primeiroDia () {
     let stringDez = '10';
 
     if (numeroUm == stringUm && numeroTrinta === stringTrinta && numeroDez == stringDez) { // junto ficou confuso
-    console.log('As variáveis numeroUm e stringUm tem o mesmo valor, mas tipos diferentes. As variáveis numeroTrinta e stringTrinta tem o mesmo valor e mesmo tipo. As variáveis numeroDez e stringDez tem o mesmo valor, mas tipos diferentes.');
+    alert('Só sabendo o desafio para entender, mas: As variáveis numeroUm e stringUm tem o mesmo valor, mas tipos diferentes. As variáveis numeroTrinta e stringTrinta tem o mesmo valor e mesmo tipo. As variáveis numeroDez e stringDez tem o mesmo valor, mas tipos diferentes.');
     } else {
-    console.log('As variáveis numeroUm e stringUm não tem o mesmo valor. As variáveis numeroTrinta e stringTrinta não tem o mesmo tipo. As variáveis numeroDez e stringDez não tem o mesmo valor.');
+    alert('As variáveis numeroUm e stringUm não tem o mesmo valor. As variáveis numeroTrinta e stringTrinta não tem o mesmo tipo. As variáveis numeroDez e stringDez não tem o mesmo valor.');
     }
 }
 
 // Quarto dia
 
-let numeroASerDescoberto;
-let escolhaNumero; 
+var numeroASerDescoberto;
+var escolhaNumero; 
 
 function numeroAleatório (min, max) {
     min = Math.ceil(1);

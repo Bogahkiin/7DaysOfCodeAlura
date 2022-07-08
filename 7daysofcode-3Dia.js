@@ -2,12 +2,9 @@
 
 //Verificando qual botão foi apertado
 function opcaoEscolhida(algo) {
-    let opcao;
-    opcao = algo;
     for (i = 0; i < 8; i++) {
-        if (opcao == i) {
-            let idBotao = opcao;
-            tirarSumirDaPergunta(idBotao);
+        if (algo == i) {
+            tirarSumirDaPergunta(algo);
         }
     }
 }

@@ -27,6 +27,7 @@ botaoEnviar.onclick = function () {
 const botaoSim = document.getElementById("botao-sim");
 const botaoNao = document.getElementById("botao-nao");
 const segundaResposta = document.getElementById("segunda-resposta");
+
 botaoSim.onclick = function () {
     segundaResposta.innerText = `Muito bom! Continue estudando e você terá muito sucesso.`;
 };
