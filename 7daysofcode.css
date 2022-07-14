@@ -1,178 +1,175 @@
-head {
-    background-color: #1E90FF;
-}
 body {
-    height: 546px;
-	font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    border-top: 100px solid #1E90FF;
-    border-bottom: 100px solid #1E90FF;
-    margin: auto;
+  height: 546px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  border-top: 100px solid #1e90ff;
+  border-bottom: 100px solid #1e90ff;
+  margin: auto;
 }
 main {
-    height: 300px;
+  height: 300px;
 }
 footer {
-    margin: 100px auto 0px auto;
-    padding-top: 20px;
+  margin: 100px auto 0px auto;
+  padding-top: 20px;
 }
 
 /* Página dia 2 */
 .input-padrao {
-    margin: 10px auto 15px auto;
-    padding: 2px 2px 2px 2px;
-    border-radius: 3px;
-    display: block;
+  margin: 10px auto 15px auto;
+  padding: 2px 2px 2px 2px;
+  border-radius: 3px;
+  display: block;
 }
 fieldset {
-    border: none;
-    margin-left: -12px;
+  border: none;
+  margin-left: -12px;
 }
 .sumir {
-    display: none;
-    transition: 500ms;
+  display: none;
+  transition: 500ms;
 }
 .botoes {
-    border-radius: 18px;
-    border: none;
-    padding: 5px 25px;
-    margin: 10px 5px;
-    background-color: #1E90FF;
-    color: white;
-    height: 30px;
-    width: 150px;
+  border-radius: 18px;
+  border: none;
+  padding: 5px 25px;
+  margin: 10px 5px;
+  background-color: #1e90ff;
+  color: white;
+  height: 30px;
+  width: 150px;
 }
 .botoes:hover {
-    background-color: blue;
-    padding: 7px 27px;
-    margin: 8px 5px;
-    transition: 175ms;=
+  background-color: blue;
+  padding: 7px 27px;
+  margin: 8px 5px;
+  transition: 175ms;
 }
 .botoes:active {
-    background-color: darkblue;
-    border: 2px solid darkslategray;
-    padding: 5px 25px;
-    transition: 175ms;=
+  background-color: darkblue;
+  border: 2px solid darkslategray;
+  padding: 5px 25px;
+  transition: 175ms;
 }
 
 /* Botões-link para outros dias do desafio */
 .botoes-para-outros-dias {
-    color: #1E90FF;
-    border-radius: 18px;
-    padding: 5px 25px;
-    margin: 10px 10px;
-    display: inline-block;
-    background-color: rgb(244, 244, 244);
-    border: 1px solid #1E90FF;
-    transition: 175ms;
-    
+  color: #1e90ff;
+  border-radius: 18px;
+  padding: 5px 25px;
+  margin: 10px 10px;
+  display: inline-block;
+  background-color: rgb(244, 244, 244);
+  border: 1px solid #1e90ff;
+  transition: 175ms;
 }
-.botoes-para-outros-dias:hover{
-    background-color: #1E90FF;
-    color: white;
-    padding: 7px 27px;
-    margin: 8px 8px;
+.botoes-para-outros-dias:hover {
+  background-color: #1e90ff;
+  color: white;
+  padding: 7px 27px;
+  margin: 8px 8px;
 }
 
 /* Página do terceiro dia */
 .form label {
-    display: block;
+  display: block;
 }
 #ultima-pergunta-dia-3 {
-    display: inline-block;
+  display: inline-block;
 }
 #lista-final {
-    width: 80%;
-    margin: 0px auto;
+  width: 80%;
+  margin: 0px auto;
 }
 
 /* Página do quinto dia */
 #naoqueropornada {
-    position: relative;
-    vertical-align: middle;
+  position: relative;
+  vertical-align: middle;
 }
 input[type="checkbox"] {
-    -webkit-appearance: none;
-    appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
 }
 .checkbox {
-    transition: 100ms;
-    border: 1px solid #1E90FF;
-    padding: 3px 3px;
-    margin: 1px 2px 1px px;
-    border-radius: 1px;
+  transition: 100ms;
+  border: 1px solid #1e90ff;
+  padding: 3px 3px;
+  margin: 1px 2px 1px px;
+  border-radius: 1px;
 }
 .checkbox:hover {
-    background: #1E90FF;
-    color: white;
-    padding: 5px 7px;
-    margin: 2px 5px 2px 5px;
+  background: #1e90ff;
+  color: white;
+  padding: 5px 7px;
+  margin: 2px 5px 2px 5px;
 }
 .lista-compras-finalizada {
-    background-color: rgb(250, 250, 250);;
-    border: 3px solid #1E90FF;
-    margin: 2px auto;
-    width: 33%;
-    padding: 2px 5px 12px 5px;
+  background-color: rgb(250, 250, 250);
+  border: 3px solid #1e90ff;
+  margin: 2px auto;
+  width: 33%;
+  padding: 2px 5px 12px 5px;
 }
 .lista-compras-finalizada p:first-child {
-    font-size: larger;
-    font-weight: bolder;
+  font-size: larger;
+  font-weight: bolder;
 }
 .lista-compras-finalizada p:last-child {
-    font-size: small;
+  font-size: small;
 }
 
 /* Sexto dia */
-#remover p, #remover button {
-    font-size: small;
-    margin: 3px 10px;
+#remover p,
+#remover button {
+  font-size: small;
+  margin: 3px 10px;
 }
 
 /* Sétimo dia */
 main p {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 .calculdora {
-    border: 3px solid #1E90FF;
-    width: 150px;
-    height: 200px;
-    margin: 50px auto 0pc auto;
-    background-color: rgb(244, 244, 244);
-    padding-bottom: 10px;
+  border: 3px solid #1e90ff;
+  width: 150px;
+  height: 200px;
+  margin: 50px auto 0pc auto;
+  background-color: rgb(244, 244, 244);
+  padding-bottom: 10px;
 }
 .calculdora p {
-    border: 2px solid black;
-    background-color: white;
-    margin: 10px auto;
-    width: 75%;
-    height: 20px;
+  border: 2px solid black;
+  background-color: white;
+  margin: 10px auto;
+  width: 75%;
+  height: 20px;
 }
 .botoes-calculadora {
-    margin: 5px 5px;
-    padding: 2px 2px;
+  margin: 5px 5px;
+  padding: 2px 2px;
 }
 .botaocalculadora {
-    text-align: center;
-    vertical-align: middle;
-    padding: 3px 3px;
-    border-radius: 3px;
-    border: 0.5px solid black;
-    background-color: white;
-    color: #1E90FF;
-    height: 23px;
-    width: 23px;
-    transition: 50ms;
+  text-align: center;
+  vertical-align: middle;
+  padding: 3px 3px;
+  border-radius: 3px;
+  border: 0.5px solid black;
+  background-color: white;
+  color: #1e90ff;
+  height: 23px;
+  width: 23px;
+  transition: 50ms;
 }
 .botaocalculadora:hover {
-    background-color: #1E90FF;
-    color: white;
-    transition: 50ms;
+  background-color: #1e90ff;
+  color: white;
+  transition: 50ms;
 }
 .botaocalculadora:active {
-    background-color: mediumslateblue;
+  background-color: mediumslateblue;
 }
 .adicionar-texto-css::after {
-    content: teste;
+  content: teste;
 }

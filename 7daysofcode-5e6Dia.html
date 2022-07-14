@@ -1,66 +1,170 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="7daysofcode.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="7daysofcode.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
     <title>7 Days Of Code Alura - Bogahkiin</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>7 Days Of Code Alura Fifth Day (plus Sixth)</h1>
+      <h1>7 Days Of Code Alura Fifth Day (plus Sixth)</h1>
     </header>
     <main>
-        <div id="primeira-pergunta">
-            <p>Olá, gostaria de adicionar algum alimento em sua lista de compras?</p>
-            <button type="button" class="botoes" onclick="botaoSim()">Sim</button>
-            <button type="button" class="botoes" onclick="botaoNao()">Não</button>
-        </div>
-        <h2 id="naoqueropornada" class="sumir">Então o que tá fazendo aqui? Recarrega e aperta sim!</h2>        
-        <div id="segunda-pergunta" class="sumir">
-            <label for="qualcomida">Qual comida você deseja inserir na lista?</label>
-            <input type="text" name="qualcomida" id="qualcomida" class="input-padrao" placeholder='Digite aqui e aperte Enter' autocomplete='off'>
-            
-            <div id="checkboxes" class="sumir">
-                <p id="colocaoquedigitou"></p>
+      <div id="primeira-pergunta">
+        <p>
+          Olá, gostaria de adicionar algum alimento em sua lista de compras?
+        </p>
+        <button type="button" class="botoes" onclick="botaoSim()">Sim</button>
+        <button type="button" class="botoes" onclick="botaoNao()">Não</button>
+      </div>
+      <h2 id="naoqueropornada" class="sumir">
+        Então o que tá fazendo aqui? Recarrega e aperta sim!
+      </h2>
+      <div id="segunda-pergunta" class="sumir">
+        <label for="qualcomida"
+          >Qual comida você deseja inserir na lista?</label
+        >
+        <input
+          type="text"
+          name="qualcomida"
+          id="qualcomida"
+          class="input-padrao"
+          placeholder="Digite aqui e aperte Enter"
+          autocomplete="off"
+        />
 
-                <label class="checkbox"><input type="checkbox" id="checkbox-0" onclick="selecionaCategoria(0)">Fruta e legumes</label>
-                <label class="checkbox"><input type="checkbox" id="checkbox-1" onclick="selecionaCategoria(1)">Carnes</label>
-                <label class="checkbox"><input type="checkbox" id="checkbox-2" onclick="selecionaCategoria(2)">Laticínios</label>
-                <label class="checkbox"><input type="checkbox" id="checkbox-3" onclick="selecionaCategoria(3)">Guloseimas</label>
-                <label class="checkbox"><input type="checkbox" id="checkbox-4" onclick="selecionaCategoria(4)">Cereais</label>
-                <label class="checkbox"><input type="checkbox" id="checkbox-5" onclick="selecionaCategoria(5)">Massas</label>
-                <label class="checkbox"><input type="checkbox" id="checkbox-6" onclick="selecionaCategoria(6)">Outros</label>
-            </div>
-        </div>
-        <div id="fechar-lista" class="sumir">
-            <button type="button" class="botoes" name="botaoTerminar" onclick="fecharLista()">Fechar lista</button>
-            <button type="button" class="botoes" name="botaoRemover" onclick="botaoRemover()">Remover item</button>
-        </div>
-        <div id="lista-compras" class="sumir lista-compras-finalizada">
-            <p>A sua lista de compras:</p>
-            <p id="lista-final"></p>
-        </div>
-        <div id="remover" class="sumir">
-            <p>Para remover um item:</p>
-            <input type="text" name="qualremover" id="qualremover" class="input-padrao" placeholder="Digite aqui e aperte Enter" autocomplete="off">
-            <p id="remover3"></p>
-            <button type="button" class="botoes" onclick="botaoSim()">Voltar</button>
-        </div>
+        <div id="checkboxes" class="sumir">
+          <p id="colocaoquedigitou"></p>
 
+          <label class="checkbox"
+            ><input
+              type="checkbox"
+              id="checkbox-0"
+              onclick="selecionaCategoria(0)"
+            />Fruta e legumes</label
+          >
+          <label class="checkbox"
+            ><input
+              type="checkbox"
+              id="checkbox-1"
+              onclick="selecionaCategoria(1)"
+            />Carnes</label
+          >
+          <label class="checkbox"
+            ><input
+              type="checkbox"
+              id="checkbox-2"
+              onclick="selecionaCategoria(2)"
+            />Laticínios</label
+          >
+          <label class="checkbox"
+            ><input
+              type="checkbox"
+              id="checkbox-3"
+              onclick="selecionaCategoria(3)"
+            />Guloseimas</label
+          >
+          <label class="checkbox"
+            ><input
+              type="checkbox"
+              id="checkbox-4"
+              onclick="selecionaCategoria(4)"
+            />Cereais</label
+          >
+          <label class="checkbox"
+            ><input
+              type="checkbox"
+              id="checkbox-5"
+              onclick="selecionaCategoria(5)"
+            />Massas</label
+          >
+          <label class="checkbox"
+            ><input
+              type="checkbox"
+              id="checkbox-6"
+              onclick="selecionaCategoria(6)"
+            />Outros</label
+          >
+        </div>
+      </div>
+      <div id="fechar-lista" class="sumir">
+        <button
+          type="button"
+          class="botoes"
+          name="botaoTerminar"
+          onclick="fecharLista()"
+        >
+          Fechar lista
+        </button>
+        <button
+          type="button"
+          class="botoes"
+          name="botaoRemover"
+          onclick="botaoRemover()"
+        >
+          Remover item
+        </button>
+      </div>
+      <div id="lista-compras" class="sumir lista-compras-finalizada">
+        <p>A sua lista de compras:</p>
+        <p id="lista-final"></p>
+      </div>
+      <div id="remover" class="sumir">
+        <p>Para remover um item:</p>
+        <input
+          type="text"
+          name="qualremover"
+          id="qualremover"
+          class="input-padrao"
+          placeholder="Digite aqui e aperte Enter"
+          autocomplete="off"
+        />
+        <p id="remover3"></p>
+        <button type="button" class="botoes" onclick="botaoSim()">
+          Voltar
+        </button>
+      </div>
     </main>
     <footer>
-        <button type="button" class="botoes-para-outros-dias" onclick="primeiroDia()">Desafio primeiro dia</button>
-        <a href="7daysofcode-2Dia.html"><button type="button" class="botoes-para-outros-dias">Desafio segundo dia</button></a>
-        <a href="7daysofcode-3Dia.html"><button type="button" class="botoes-para-outros-dias">Desafio terceiro dia</button></a>
-        <button type="button" class="botoes-para-outros-dias"  onclick="quartoDia()">Desafio quarto dia</button>
-        <a href="7daysofcode-7Dia.html"><button type="button" class="botoes-para-outros-dias" >Desafio sétimo dia</button></a>
+      <button
+        type="button"
+        class="botoes-para-outros-dias"
+        onclick="primeiroDia()"
+      >
+        Desafio primeiro dia
+      </button>
+      <a href="7daysofcode-2Dia.html"
+        ><button type="button" class="botoes-para-outros-dias">
+          Desafio segundo dia
+        </button></a
+      >
+      <a href="7daysofcode-3Dia.html"
+        ><button type="button" class="botoes-para-outros-dias">
+          Desafio terceiro dia
+        </button></a
+      >
+      <button
+        type="button"
+        class="botoes-para-outros-dias"
+        onclick="quartoDia()"
+      >
+        Desafio quarto dia
+      </button>
+      <a href="7daysofcode-7Dia.html"
+        ><button type="button" class="botoes-para-outros-dias">
+          Desafio sétimo dia
+        </button></a
+      >
     </footer>
     <script src="7daysofcode-5e6Dia.js"></script>
     <script src="7daysofcode.js"></script>
-</body>
+  </body>
 </html>
